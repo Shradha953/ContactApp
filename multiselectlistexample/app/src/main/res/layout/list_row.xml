@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/contactimage"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="@string/app_name"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_toEndOf="@+id/contactimage"
+        android:layout_toRightOf="@+id/contactimage" >
+
+        <TextView
+            android:id="@+id/contactname"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:singleLine="true"
+            android:fontFamily="sans-serif"
+            android:text="   Contact Name"
+            android:textColor="#000"
+            android:textIsSelectable="false"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/contactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:fontFamily="sans-serif"
+            android:text="    09876543210"
+            android:textColor="#9E9E9E"
+            android:textIsSelectable="false"
+            android:textSize="12dp"
+            android:layout_below="@+id/contactname" />
+    </RelativeLayout>
+</RelativeLayout>
